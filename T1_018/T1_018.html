@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Konversi Suhu - T1_XXX</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    label, select, input, button { font-size: 1rem; margin: 4px 0; }
+    #hasil { margin-top: 15px; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <h1>Konversi Suhu</h1>
+
+  <form id="formKonversi">
+    <label>
+      Nilai suhu:
+      <input type="number" step="any" id="nilaiSuhu" required />
+    </label>
+
+    <br />
+
+    <label>
+      Konversi:
+      <select id="tipeKonversi">
+        <option value="CtoF">Celsius → Fahrenheit</option>
+        <option value="CtoR">Celsius → Reamur</option>
+        <option value="FtoC">Fahrenheit → Celsius</option>
+        <option value="FtoR">Fahrenheit → Reamur</option>
+        <option value="RtoC">Reamur → Celsius</option>
+        <option value="RtoF">Reamur → Fahrenheit</option>
+      </select>
+    </label>
+
+    <br />
+
+    <button type="submit">Konversi</button>
+  </form>
+
+  <p id="hasil"></p>
+
+  <script src="T1_XXX.js"></script>
+</body>
+</html>
